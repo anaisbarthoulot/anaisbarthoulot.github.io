@@ -18,6 +18,16 @@
             background-color: #fff;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex; /* Utilisation de flexbox pour la mise en page */
+        }
+        #profile-picture {
+            max-width: 100%; /* Ajustement de la taille de l'image */
+            height: auto;
+            border-radius: 50%; /* Ajout d'un arrondi aux bords de l'image */
+            margin-right: 20px; /* Espacement entre l'image et le texte */
+        }
+        .text-column {
+            flex: 1; /* Permet à la colonne de texte de prendre autant d'espace que possible */
         }
         h1 {
             text-align: center;
@@ -25,21 +35,16 @@
         p {
             line-height: 1.6;
         }
-        #profile-picture {
-            max-width: 100%; /* Sets the maximum width of the image to the width of its container */
-            height: auto; /* Allows the image to scale proportionally */
-            display: block; /* Ensures that the image is treated as a block-level element */
-            margin: 0 auto; /* Centers the image horizontally */
-            border-radius: 50%; /* Applies rounded corners to the image */
-        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Anaïs Barthoulot</h1>
-        <img id="profile-picture" src="Design sans titre.png" alt="Photo of Anaïs Barthoulot">
-        <p>Currently in postdoctoral position at LIRMM working on the ANR Sangria project.</p>
-        <p>I completed my PhD titled "Advanced Encryption for Sensitive Data Sharing" in December 2023. This PhD was conducted at the University of Limoges and Orange (as part of a CIFRE thesis).</p>
+        <img id="profile-picture" src="anaisbarthoulot.github.io/Design%20sans%20titre.png" alt="Photo of Anaïs Barthoulot">
+        <div class="text-column">
+            <h1>Anaïs Barthoulot</h1>
+            <p>Currently in postdoctoral position at LIRMM working on the ANR Sangria project.</p>
+            <p>I completed my PhD titled "Advanced Encryption for Sensitive Data Sharing" in December 2023. This PhD was conducted at the University of Limoges and Orange (as part of a CIFRE thesis).</p>
+        </div>
     </div>
 </body>
 </html>
