@@ -25,12 +25,19 @@
         p {
             line-height: 1.6;
         }
+        #profile-picture {
+            max-width: 100%; /* Sets the maximum width of the image to the width of its container */
+            height: auto; /* Allows the image to scale proportionally */
+            display: block; /* Ensures that the image is treated as a block-level element */
+            margin: 0 auto; /* Centers the image horizontally */
+            border-radius: 50%; /* Applies rounded corners to the image */
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Anaïs Barthoulot</h1>
-        <img src="Design sans titre.png" alt="Photo of Anaïs Barthoulot">
+        <img id="profile-picture" src="Design sans titre.png" alt="Photo of Anaïs Barthoulot">
         <p>Currently in postdoctoral position at LIRMM working on the ANR Sangria project.</p>
         <p>I completed my PhD titled "Advanced Encryption for Sensitive Data Sharing" in December 2023. This PhD was conducted at the University of Limoges and Orange (as part of a CIFRE thesis).</p>
     </div>
