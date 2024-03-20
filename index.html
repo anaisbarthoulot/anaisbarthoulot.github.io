@@ -49,11 +49,11 @@
         a:hover {
             text-decoration: underline; /* Soulignement du lien au survol */
         }
-        #publications {
-            display: none; /* Cache la liste des publications par défaut */
+        #publications, #enseignement, #qualifications {
+            display: none; /* Cache les sections par défaut */
         }
-        #publications:target {
-            display: block; /* Affiche la liste des publications lorsque la cible est atteinte */
+        #publications:target, #enseignement:target, #qualifications:target {
+            display: block; /* Affiche la section lorsque la cible est atteinte */
         }
         .contact {
             margin-top: 20px; /* Espacement avec la section précédente */
@@ -68,6 +68,7 @@
         <h1>Anaïs Barthoulot</h1>
         <p>Currently in postdoctoral position at <a href="https://www.lirmm.fr/eco/index.php" target="_blank">ECO (Exact Computing)</a> team, LIRMM, working on the ANR Sangria project. Check out the <a href="https://anr.fr/Project-ANR-21-CE39-0006" target="_blank">Sangria project</a> for more information.</p>
         <a href="#publications">Publications</a> <!-- Lien vers la section des publications -->
+        <a href="#enseignement">Enseignement</a> <!-- Lien vers la section d'enseignement -->
     </div>
 
     <div class="container" id="publications"> <!-- Section des publications -->
@@ -84,11 +85,8 @@
         </ul>
     </div>
 
-    <div class="container contact"> <!-- Section de contact -->
-        <h2>Contact:</h2>
-        <p>Email: <a href="mailto:anais.barthoulot@lirmm.fr">anais.barthoulot@lirmm.fr</a></p>
-        <p>Address: Bâtiment 4, 161 Rue Ada, 34095 Montpellier, France</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/ana%C3%AFs-barthoulot?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Anaïs Barthoulot</a></p>
-    </div>
-</body>
-</html>
+    <div class="container" id="enseignement"> <!-- Section d'enseignement -->
+        <h2>Enseignement:</h2>
+        <ul>
+            <li>Chargée de cours unité d'enseignement algorithmique, structures de données et cryptologie (7h30 de cours), faculté des sciences Caen</li>
+            <li>Chargée de TD/TP unité d'enseignement informat
