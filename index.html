@@ -49,6 +49,12 @@
         a:hover {
             text-decoration: underline; /* Soulignement du lien au survol */
         }
+        #publications {
+            display: none; /* Cache la liste des publications par défaut */
+        }
+        #publications:target {
+            display: block; /* Affiche la liste des publications lorsque la cible est atteinte */
+        }
     </style>
 </head>
 <body>
@@ -56,9 +62,10 @@
         <img id="profile-picture" src="photo.png" alt="Photo of Anaïs Barthoulot">
         <h1>Anaïs Barthoulot</h1>
         <p>Currently in postdoctoral position at <a href="https://www.lirmm.fr/eco/index.php" target="_blank">ECO (Exact Computing)</a> team, LIRMM, working on the ANR Sangria project. Check out the <a href="https://anr.fr/Project-ANR-21-CE39-0006" target="_blank">Sangria project</a> for more information.</p>
+        <a href="#publications">Publications</a> <!-- Lien vers la section des publications -->
     </div>
 
-    <div class="publications">
+    <div class="container" id="publications"> <!-- Section des publications -->
         <h2>Publications:</h2>
         <ul>
             <li>Dually Computable Cryptographic Accumulators and Their Application to Attribute-Based Encryption, with Olivier Blazy and Sébastien Canard, accepted at the International conference on Cryptology and Network Security (CANS) 2023. <a href="https://link.springer.com/chapter/10.1007/978-981-99-7563-1_24" target="_blank">Link</a>. Full version available on <a href="https://eprint.iacr.org/2023/1277" target="_blank">ePrint</a>.</li>
