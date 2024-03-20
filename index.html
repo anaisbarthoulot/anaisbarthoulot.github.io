@@ -1,113 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anaïs Barthoulot's Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4; /* Couleur de fond légèrement gris */
-        }
-        .container {
-            max-width: 800px;
-            margin: 50px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        #profile-picture {
-            max-width: 150px; /* Taille de l'image fixe */
-            height: auto;
-            border-radius: 50%; /* Ajout d'un arrondi aux bords de l'image */
-            margin-top: 20px; /* Espacement entre l'image et le texte */
-            margin-left: 20px; /* Espacement entre l'image et le bord gauche */
-            float: left; /* Alignement à gauche */
-        }
-        h1 {
-            color: #333; /* Couleur du titre */
-            margin-top: 0; /* Supprime la marge par défaut */
-        }
-        p {
-            line-height: 1.6;
-            color: #666; /* Couleur du texte */
-        }
-        ul {
-            list-style-type: none; /* Supprime les puces de la liste */
-            padding: 0; /* Supprime les marges intérieures de la liste */
-        }
-        li {
-            margin-bottom: 10px; /* Espacement entre les éléments de la liste */
-        }
-        a {
-            color: #4CAF50; /* Couleur des liens */
-            text-decoration: none; /* Suppression du soulignement par défaut */
-        }
-        a:hover {
-            text-decoration: underline; /* Soulignement du lien au survol */
-        }
-        #publications, #enseignement, #qualifications, #contact {
-            display: none; /* Cache les sections par défaut */
-        }
-        #publications:target, #enseignement:target, #qualifications:target, #contact:target {
-            display: block; /* Affiche la section lorsque la cible est atteinte */
-        }
-        .contact {
-            margin-top: 20px; /* Espacement avec la section précédente */
-            padding-top: 20px; /* Espacement intérieur */
-            border-top: 1px solid #ccc; /* Bordure supérieure */
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <img id="profile-picture" src="photo.png" alt="Photo of Anaïs Barthoulot">
-        <h1>Anaïs Barthoulot</h1>
-        <p>Currently in postdoctoral position at <a href="https://www.lirmm.fr/eco/index.php" target="_blank">ECO (Exact Computing)</a> team, LIRMM, working on the ANR Sangria project. Check out the <a href="https://anr.fr/Project-ANR-21-CE39-0006" target="_blank">Sangria project</a> for more information.</p>
-        <a href="#publications">Publications</a> <!-- Lien vers la section des publications -->
-        <a href="#enseignement">Enseignement</a> <!-- Lien vers la section d'enseignement -->
-        <a href="#contact">Contact</a> <!-- Lien vers la section de contact -->
-        <a href="#volunteering">Volunteering</a> <!-- Lien vers la section de bénévolat -->
-    </div>
+<div class="container" id="publications"> <!-- Section des publications -->
+    <h2>Publications:</h2>
+    <ul>
+        <li>Dually Computable Cryptographic Accumulators and Their Application to Attribute-Based Encryption, with Olivier Blazy and Sébastien Canard, accepted at the <a href="https://cans2023.com/" target="_blank">21st International Conference on Cryptology and Network Security (CANS) 2023</a>. <a href="https://link.springer.com/chapter/10.1007/978-981-99-7563-1_24" target="_blank">Link</a>. Full version available on <a href="https://eprint.iacr.org/2023/1277" target="_blank">ePrint</a>.</li>
+        <li>
+            (Augmented) Broadcast Encryption from Identity-Based Encryption with Wildcards, with Olivier Blazy and Sébastien Canard, accepted at the <a href="https://www.augusta.edu/ccs/conferences/cans2022/" target="_blank">22nd International Conference on Cryptology and Network Security (CANS) 2022</a>. <a href="https://link.springer.com/chapter/10.1007/978-3-031-20974-1_7" target="_blank">Link</a>
+            <ul> <!-- Sous-liste pour la version longue -->
+                <li>Full version available on <a href="https://eprint.iacr.org/2022/1192" target="_blank">ePrint</a>.</li>
+            </ul>
+        </li>
+        <li>Locally Verifiable Signatures and Cryptographic Accumulators: different names, same thing? (extended abstract) with Olivier Blazy and Sébastien Canard at The Conference for Failed Approaches and Insightful Losses in Cryptology (CFail) 2023. <a href="https://www.cfail.org/cfail2023" target="_blank">Link</a>.</li>
+    </ul>
+</div>
 
-    <div class="container" id="publications"> <!-- Section des publications -->
-        <h2>Publications:</h2>
-        <ul>
-            <li>Dually Computable Cryptographic Accumulators and Their Application to Attribute-Based Encryption, with Olivier Blazy and Sébastien Canard, accepted at the <a href="https://cans2023.com/" target="_blank">21st International Conference on Cryptology and Network Security (CANS) 2023</a>. <a href="https://link.springer.com/chapter/10.1007/978-981-99-7563-1_24" target="_blank">Link</a>. Full version available on <a href="https://eprint.iacr.org/2023/1277" target="_blank">ePrint</a>.</li>
-            <li>
-                (Augmented) Broadcast Encryption from Identity-Based Encryption with Wildcards, with Olivier Blazy and Sébastien Canard, accepted at the <a href="https://www.augusta.edu/ccs/conferences/cans2022/" target="_blank">22nd International Conference on Cryptology and Network Security (CANS) 2022</a>. <a href="https://link.springer.com/chapter/10.1007/978-3-031-20974-1_7" target="_blank">Link</a>.
-                <ul> <!-- Sous-liste pour la version longue -->
-                    <li>Full version available on <a href="https://eprint.iacr.org/2022/1192" target="_blank">ePrint</a>.</li>
-                </ul>
-            </li>
-            <li>Locally Verifiable Signatures and Cryptographic Accumulators: different names, same thing? (extended abstract) with Olivier Blazy and Sébastien Canard at The Conference for Failed Approaches and Insightful Losses in Cryptology (CFail) 2023. <a href="https://www.cfail.org/cfail2023" target="_blank">Link</a>.</li>
-        </ul>
-    </div>
+<div class="container" id="enseignement"> <!-- Section d'enseignement -->
+    <h2>Enseignement:</h2>
+    <ul>
+        <li>Chargée de cours unité d'enseignement algorithmique, structures de données et cryptologie (7h30 de cours), faculté des sciences Caen</li>
+        <li>Chargée de TD/TP unité d'enseignement informatique et protection des données, faculté des sciences Caen, septembre à décembre 2021 (30h)</li>
+    </ul>
+</div>
 
-    <div class="container" id="enseignement"> <!-- Section d'enseignement -->
-        <h2>Enseignement:</h2>
-        <ul>
-            <li>Chargée de cours unité d'enseignement algorithmique, structures de données et cryptologie (7h30 de cours), faculté des sciences Caen</li>
-            <li>Chargée de TD/TP unité d'enseignement informatique et protection des données, faculté des sciences Caen, septembre à décembre 2021 (30h)</li>
-        </ul>
-    </div>
+<div class="container" id="qualifications"> <!-- Section de qualifications -->
+    <h2>Qualifications:</h2>
+    <ul>
+        <li>PhD in Computer Science, University of Caen Normandy, France (2021)</li>
+        <li>Master in Computer Science, University of Caen Normandy, France (2017)</li>
+    </ul>
+</div>
 
-    <div class="container" id="contact"> <!-- Section de contact -->
-        <h2>Contact:</h2>
-        <ul>
-            <p>Email: <a href="mailto:anais.barthoulot@lirmm.fr">anais.barthoulot@lirmm.fr</a></p>
-            <p>Address: LIRMM, Bâtiment 4, 161 Rue Ada, 34095 Montpellier, France</p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/ana%C3%AFs-barthoulot?utm_source=share&utm_campaign=
-        </ul>
-    </div>
-
-    <div class="container" id="volunteering"> <!-- Section de bénévolat -->
-        <h2>Volunteering:</h2>
-        <ul>
-            <li>Bénévole brigade phoque Groupe mammalogique normand (GMN) été 2021</li>
-            <li>Bénévole partenariat entreprise au Montpellier Handball (MHB) saisons 2016-2017 et 2017-2018
-        </ul>
-    </div>
+<div class="container" id="contact"> <!-- Section de contact -->
+    <h2>Contact:</h2>
+    <ul>
+        <p>Email: <a href="mailto:anais.barthoulot@lirmm.fr">anais.barthoulot@lirmm.fr</a></p>
+        <p>Address: LIRMM, Bâtiment 4, 161 Rue Ada, 34095 Montpellier, France</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/ana%C3%AFs-barth
