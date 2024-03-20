@@ -19,18 +19,17 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             display: flex; /* Utilisation de flexbox pour la mise en page */
+            flex-direction: column; /* Affichage en colonne */
+            align-items: center; /* Centrage horizontal */
+            text-align: center; /* Centrage vertical */
         }
         #profile-picture {
             max-width: 150px; /* Taille de l'image fixe */
             height: auto;
             border-radius: 50%; /* Ajout d'un arrondi aux bords de l'image */
-            margin-right: 20px; /* Espacement entre l'image et le texte */
-        }
-        .text-column {
-            flex: 1; /* Permet à la colonne de texte de prendre autant d'espace que possible */
+            margin-bottom: 20px; /* Espacement entre l'image et le texte */
         }
         h1 {
-            text-align: center;
             color: #333; /* Couleur du titre */
         }
         p {
@@ -49,11 +48,15 @@
 <body>
     <div class="container">
         <img id="profile-picture" src="photo.png" alt="Photo of Anaïs Barthoulot">
-        <div class="text-column">
-            <h1>Anaïs Barthoulot</h1>
-            <p>Currently in postdoctoral position at <a href="https://www.lirmm.fr/eco/index.php" target="_blank">ECO (Exact Computing)</a> team, LIRMM, working on the ANR Sangria project. Check out the <a href="https://anr.fr/Project-ANR-21-CE39-0006" target="_blank">Sangria project</a> for more information.</p>
-            <p>My PhD thesis, titled "Advanced Encryption for Sensitive Data Sharing", was supervised by Olivier Blazy (Ecole Polytechnique), Sébastien Canard (Télécom Paris), and Philippe Gaborit (University of Limoges). The thesis is available <a href="https://theses.fr/2023LIMO0067" target="_blank">here</a>.</p>
-        </div>
+        <h1>Anaïs Barthoulot</h1>
+        <p>Currently in postdoctoral position at <a href="https://www.lirmm.fr/eco/index.php" target="_blank">ECO (Exact Computing)</a> team, LIRMM, working on the ANR Sangria project.</p>
+        <p>My PhD thesis, titled "Advanced Encryption for Sensitive Data Sharing", was supervised by Olivier Blazy (Ecole Polytechnique), Sébastien Canard (Télécom Paris), and Philippe Gaborit (University of Limoges). The thesis is available <a href="https://theses.fr/2023LIMO0067" target="_blank">here</a>.</p>
+        <h2>Publications:</h2>
+        <ul>
+            <li>Dually Computable Cryptographic Accumulators and Their Application to Attribute-Based Encryption, with Olivier Blazy and Sébastien Canard, accepted at the International conference on Cryptology and Network Security (CANS) 2023. <a href="https://link.springer.com/chapter/10.1007/978-981-99-7563-1_24" target="_blank">Link</a>. Full version available on <a href="https://eprint.iacr.org/2023/1277" target="_blank">ePrint</a>.</li>
+            <li>(Augmented) Broadcast Encryption from Identity-Based Encryption with Wildcards, with Olivier Blazy and Sébastien Canard, accepted at the International conference on Cryptology and Network Security (CANS) 2022. <a href="https://link.springer.com/chapter/10.1007/978-3-031-20974-1_7" target="_blank">Link</a>. Full version available on <a href="https://eprint.iacr.org/2022/1192" target="_blank">ePrint</a>.</li>
+            <li>Locally Verifiable Signatures and Cryptographic Accumulators: different names, same thing? (extended abstract) with Olivier Blazy and Sébastien Canard at The Conference for Failed Approaches and Insightful Losses in Cryptology (CFail) 2023. <a href="https://www.cfail.org/cfail2023" target="_blank">Link</a>.</li>
+        </ul>
     </div>
 </body>
 </html>
