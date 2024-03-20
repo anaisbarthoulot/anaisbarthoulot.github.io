@@ -35,15 +35,22 @@
         p {
             line-height: 1.6;
         }
+        a {
+            color: #007bff; /* Couleur de lien */
+            text-decoration: none; /* Suppression du soulignement par défaut */
+        }
+        a:hover {
+            text-decoration: underline; /* Soulignement du lien au survol */
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <img id="profile-picture" src="anaisbarthoulot.github.io/Design%20sans%20titre.png" alt="Photo of Anaïs Barthoulot">
+        <img id="profile-picture" src="photo.png" alt="Photo of Anaïs Barthoulot">
         <div class="text-column">
             <h1>Anaïs Barthoulot</h1>
-            <p>Currently in postdoctoral position at LIRMM working on the ANR Sangria project.</p>
-            <p>I completed my PhD titled "Advanced Encryption for Sensitive Data Sharing" in December 2023. This PhD was conducted at the University of Limoges and Orange (as part of a CIFRE thesis).</p>
+            <p>Currently in postdoctoral position at <a href="https://www.lirmm.fr/eco/index.php" target="_blank">ECO (Exact Computing)</a> team, LIRMM, working on the ANR Sangria project.</p>
+            <p>My PhD thesis, titled "Advanced Encryption for Sensitive Data Sharing", was supervised by Olivier Blazy (Ecole Polytechnique), Sébastien Canard (Télécom Paris), and Philippe Gaborit (University of Limoges). The thesis is available <a href="https://theses.fr/2023LIMO0067" target="_blank">here</a>.</p>
         </div>
     </div>
 </body>
