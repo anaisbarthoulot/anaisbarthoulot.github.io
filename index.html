@@ -48,10 +48,10 @@
         a:hover {
             text-decoration: underline; /* Soulignement du lien au survol */
         }
-        #publications, #enseignement, #contact, #volunteering {
+        #publications, #enseignement, #contact, #volunteering #miscellaneous{
             display: none; /* Cache les sections par défaut */
         }
-        #publications:target, #enseignement:target,  #contact:target, #volunteering:target {
+        #publications:target, #enseignement:target,  #contact:target, #volunteering:target #miscellaneous:target {
             display: block; /* Affiche la section lorsque la cible est atteinte */
         }
         .contact {
@@ -70,6 +70,7 @@
         <a href="#enseignement">Enseignement</a> <!-- Lien vers la section d'enseignement -->
         <a href="#contact">Contact</a> <!-- Lien vers la section de contact -->
         <a href="#volunteering">Volunteering</a> <!-- Lien vers la section de bénévolat -->
+        <a href="#miscellaneous">Miscellaneous</a> <!-- Lien vers la section divers -->
     </div>
 
     <div class="container" id="publications"> <!-- Section des publications -->
@@ -121,4 +122,10 @@
             <li>Bénévole au championnat du monde masculin de handball 2017, sur le site de Montpellier </li>
         </ul>
         </div>
-            
+
+        <div class="container" id="volunteering"> <!-- Section de bénévolat -->
+        <h2>Miscellaneous:</h2>
+        <ul>
+            <li>Participation aux <a href="https://gdr-securite.irisa.fr/redocs/redocs21/">Rencontre Entreprises DOCtorants en Sécurité 2021</a>, sur le sujet de la CNIL. Retour sur cette expérience <a href="https://linc.cnil.fr/risques-des-objets-connectes-sur-la-vie-privee-lanalyse-de-doctorants-en-securite-redocs">ici </a> </li>
+        </ul>
+        </div>
